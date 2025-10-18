@@ -15,90 +15,105 @@
     <body>
         <form id="hockeySurvey" action="https://httpbin.org/post" method="post">
 			<h1>Hockey Survey</h1>
-            <div class="input-container">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" />
-            </div>
-            <div class="input-container">
-                <label for="age">Age:</label>
-                <input type="range" id="age" name="age" min="0" max="120">
-            </div>
             <fieldset>
-                <legend>Province:</legend>
-                <label for="province">Province/Territory:</label>
-                <select name="province" id="province">
-                    <option value="">--Please choose an option--</option>
-                    <option value="ab">Alberta</option>
-                    <option value="bc">British Columbia</option>
-                    <option value="mb">Manitoba</option>
-                    <option value="nb">New Brunswick</option>
-                    <option value="nl">Newfoundland & Labrador</option>
-                    <option value="nt">Northwest Territories</option>
-                    <option value="ns">Nova Scotia</option>
-                    <option value="nu">Nunavut</option>
-                    <option value="on">Ontario</option>
-                    <option value="pe">Prince Edward Island</option>
-                    <option value="qc">Quebec</option>
-                    <option value="sk">Saskatchewan</option>
-                    <option value="yt">Yukon</option>
-                </select>
+                <legend>Personal Information:</legend>
+                <div class="input-container">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" />
+                </div>
+                <div class="input-container">
+                    <label for="age">Age:</label>
+                    <input type="range" id="age" name="age" min="0" max="120">
+                </div>
+                <div>
+                    <label for="province">Province/Territory:</label>
+                    <select name="province" id="province">
+                        <option value="">--Please choose an option--</option>
+                        <option value="ab">Alberta</option>
+                        <option value="bc">British Columbia</option>
+                        <option value="mb">Manitoba</option>
+                        <option value="nb">New Brunswick</option>
+                        <option value="nl">Newfoundland & Labrador</option>
+                        <option value="nt">Northwest Territories</option>
+                        <option value="ns">Nova Scotia</option>
+                        <option value="nu">Nunavut</option>
+                        <option value="on">Ontario</option>
+                        <option value="pe">Prince Edward Island</option>
+                        <option value="qc">Quebec</option>
+                        <option value="sk">Saskatchewan</option>
+                        <option value="yt">Yukon</option>
+                    </select>
+                </div>
+                <div class="input-container">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="input-container">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
             </fieldset>
-            <div class="input-container">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
-            </div>
-            <div class="input-container">
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone">
-            </div>
             <fieldset>
                 <legend>Favourite Team:</legend>
                 <div>
-                    <label for="canucks">Vancouver Canucks</label>
                     <input type="radio" id="canucks" name="teams">
+                    <label for="canucks">Vancouver Canucks</label>
                 </div>
                 <div>
-                    <label for="oilers">Edmonton Oilers</label>
                     <input type="radio" id="oilers" name="teams">
+                    <label for="oilers">Edmonton Oilers</label>
                 </div>
                 <div>
-                    <label for="flames">Calgary Flames</label>
                     <input type="radio" id="flames" name="teams">
+                    <label for="flames">Calgary Flames</label>
                 </div>
                 <div>
-                    <label for="jets">Winnipeg Jets</label>
                     <input type="radio" id="jets" name="teams">
+                    <label for="jets">Winnipeg Jets</label>
                 </div>
                 <div>
-                    <label for="sens">Ottawa Senators</label>
                     <input type="radio" id="sens" name="teams">
+                    <label for="sens">Ottawa Senators</label>
                 </div>
                 <div>
-                    <label for="leafs">Toronto Maple Leafs</label>
                     <input type="radio" id="leafs" name="teams">
+                    <label for="leafs">Toronto Maple Leafs</label>
                 </div>
                 <div>
-                    <label for="canadiens">Montreal Canadiens</label>
                     <input type="radio" id="canadiens" name="teams">
+                    <label for="canadiens">Montreal Canadiens</label>
                 </div>
             </fieldset>
             <fieldset>
                 <legend>Check What You Use:</legend>
-                <label for="sock-tape">Sock Tape</label>
-                <input type="checkbox" id="sock-tape" name="sock-tape">
-                <label for="mouthguard">Mouthguard</label>
-                <input type="checkbox" id="mouthguard" name="mouthguard">
-                <label for="visor">Visor</label>
-                <input type="checkbox" id="visor" name="visor">
-                <label for="jersey-tuck">Jersey Tuck</label>
-                <input type="checkbox" id="jersey-tuck" name="jersey-tuck">
-                <label for="tongue-tuck">Skate Tongue Tuck</label>
-                <input type="checkbox" id="tongue-tuck" name="tongue-tuck">
+                <div>
+                    <input type="checkbox" id="sock-tape" name="sock-tape">
+                    <label for="sock-tape">Sock Tape</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="mouthguard" name="mouthguard">
+                    <label for="mouthguard">Mouthguard</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="visor" name="visor">
+                    <label for="visor">Visor</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="jersey-tuck" name="jersey-tuck">
+                    <label for="jersey-tuck">Jersey Tuck</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="tongue-tuck" name="tongue-tuck">
+                    <label for="tongue-tuck">Skate Tongue Tuck</label>
+                </div>
             </fieldset>
-            <div class="input-container">
-                <label for="first-game">When Was Your First Game (YYYY-MM-DD):</label>
-                <input type="date" id="first-game" name="first-game">
-            </div>
-        </form>
+            <fieldset>
+                <legend>First Game:</legend>
+                    <label for="first-game">When Was Your First Game:</label>
+                    <input type="date" id="first-game" name="first-game">
+            </fieldset>
+           <button type="submit">Submit</button>
+		</form>
+		<script src="script.js"></script>
     </body>
 </html>
