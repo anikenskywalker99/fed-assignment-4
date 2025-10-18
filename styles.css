@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'skia-cc'; /* Choose a name to refer to your font */
+    src: local('Skia'), url('ufonts.com_skia.woff') format('woff');
+    font-weight: normal; /* Adjust based on the specific font weight */
+    font-style: normal;  /* Adjust based on the specific font style */
+}
+
+:root {
+    --oxford: #00183F;
+    --polynesian: #004A98;
+    --davy: #54555A;
+    --battleship: #8F9191;
+    --madder: #AD0E28;
+}
+
+body {
+	font-family: "skia-cc", "Arial", sans-serif;
+	background-color: var(--battleship);
+	color: var(--oxford);
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 2px 2px 4px var(--battleship);
+}
+
+form {
+	width: 90%;
+	max-width: 32rem;
+	background: white;
+	padding: 1.25rem;
+	border-radius: 0.5rem;
+	box-shadow: 0 0 7px var(--madder);
+	text-align: left;
+}
+
+input,
+select,
+textarea {
+	padding: 0.5rem;
+	border: 1px solid var(--oxford);
+	border-radius: 0.25rem;
+    margin: 0.25rem;
+}
+
+fieldset {
+    border: 1px solid var(--oxford);
+}
+
+.submit {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+#age,
+input[type='radio'],
+input[type='checkbox'] {
+    accent-color: var(--polynesian);
+}
+
+@media only screen and (max-width: 240px) {
+    #age,
+    label[for='age'] {
+        display: none;
+    }
+
+    #name,
+    #province,
+    #email,
+    #phone {
+        width: 50vw;
+    }
+}
