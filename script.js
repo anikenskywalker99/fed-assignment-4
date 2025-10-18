@@ -78,3 +78,14 @@ const validateForm = () => {
 
     return isValid;
 };
+
+const showInputError = (inputElement, message) => {
+    const errorDisplay = document.createElement("span");
+    errorDisplay.innerText = message;
+    errorDisplay.className = "error-message";
+    errorDisplay.style.color = "red";
+    errorDisplay.style.fontStyle = "italic";
+    errorDisplay.setAttribute("role", "alert");
+
+    inputElement.parentElement.appendChild(errorDisplay);
+};
