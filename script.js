@@ -6,9 +6,9 @@
 
 const form = document.getElementById("hockeySurvey");
 
-const isNotEmpty = (text) => {
-    if (text.value.trim() === "") {
-    showInputError(text, "Field must not be empty");
+const isNotEmpty = (name) => {
+    if (name.value.trim() === "") {
+    showInputError(name, "Name is required");
     isValid = false;
   }
 }
@@ -57,3 +57,24 @@ const isValidDate = (date) => {
         isValid = false;
     }
 }
+
+const validateForm = () => {
+    let isValid = true;
+
+    const name = document.getElementById("name");
+    const age = document.getElementById("age");
+    const province = document.getElementById("province");
+    const email = document.getElementById("email")
+    const phone = document.getElementById("phone");
+    const firstGame = document.getElementById("first-game");
+
+    isNotEmpty(name)
+    isValidRange(age)
+    isSelected(province)
+    isValidEmail(email)
+    isValidPhone(phone)
+    hasCheckedOption()
+    isValidDate(firstGame)
+
+    return isValid;
+};
